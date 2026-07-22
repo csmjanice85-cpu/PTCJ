@@ -22,10 +22,11 @@ document.addEventListener("DOMContentLoaded", function () {
   var modalCta = modal ? modal.querySelector(".timetable-modal-cta a") : null;
 
   function openTimetable(btn) {
-    var branch = btn.getAttribute("data-branch") || "补习时间表";
+    var branch = btn.getAttribute("data-branch") || "";
     var img = btn.getAttribute("data-img");
     var wa = btn.getAttribute("data-wa");
-    modalTitle.textContent = branch + " · 补习时间表";
+    var suffix = window.i18nT ? window.i18nT("tt_modal_suffix") : "· 补习时间表";
+    modalTitle.textContent = (branch + " " + suffix).trim();
     modalImg.src = img;
     modalImg.alt = branch + " 补习时间表";
     modalImg.style.display = "";
@@ -56,7 +57,8 @@ document.addEventListener("DOMContentLoaded", function () {
         var box = modal.querySelector(".timetable-modal-box");
         var div = document.createElement("div");
         div.className = "timetable-modal-fallback";
-        div.innerHTML = '<svg viewBox="0 0 32 32" fill="none"><rect x="5" y="6" width="22" height="20" rx="2" stroke="#F8F4EC" stroke-width="2" fill="none"/><line x1="5" y1="13" x2="27" y2="13" stroke="#C9A24B" stroke-width="2"/><line x1="10" y1="4" x2="10" y2="9" stroke="#F8F4EC" stroke-width="2" stroke-linecap="round"/><line x1="22" y1="4" x2="22" y2="9" stroke="#F8F4EC" stroke-width="2" stroke-linecap="round"/></svg><p>时间表照片准备中，欢迎直接 WhatsApp 我们索取。</p>';
+        var fallbackText = window.i18nT ? window.i18nT("tt_modal_fallback") : "时间表照片准备中，欢迎直接 WhatsApp 我们索取。";
+        div.innerHTML = '<svg viewBox="0 0 32 32" fill="none"><rect x="5" y="6" width="22" height="20" rx="2" stroke="#F8F4EC" stroke-width="2" fill="none"/><line x1="5" y1="13" x2="27" y2="13" stroke="#C9A24B" stroke-width="2"/><line x1="10" y1="4" x2="10" y2="9" stroke="#F8F4EC" stroke-width="2" stroke-linecap="round"/><line x1="22" y1="4" x2="22" y2="9" stroke="#F8F4EC" stroke-width="2" stroke-linecap="round"/></svg><p>' + fallbackText + "</p>";
         box.insertBefore(div, modalCta.closest(".timetable-modal-cta"));
       }
     });
