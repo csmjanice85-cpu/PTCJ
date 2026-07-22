@@ -606,6 +606,41 @@ section[id], #schedule-terengganu, #schedule-perak { scroll-margin-top: 96px; }
   white-space: nowrap;
   width: 38%;
 }
+.examcamp-grade-photo {
+  border-radius: 14px;
+  overflow: hidden;
+  margin-bottom: 18px;
+  box-shadow: 0 6px 18px rgba(36,27,51,0.08);
+}
+.examcamp-grade-label {
+  background: var(--primary);
+  color: var(--bg);
+  font-family: "Noto Serif SC", serif;
+  font-weight: 700;
+  font-size: 15px;
+  padding: 10px 16px;
+}
+.examcamp-grade-photo img { width: 100%; display: block; }
+
+/* ===== Gallery (校园实况) ===== */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+.gallery-grid img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 18px;
+  box-shadow: 0 14px 34px rgba(36,27,51,0.14);
+  display: block;
+}
+@media (max-width: 900px) {
+  .gallery-grid { grid-template-columns: 1fr; }
+  .gallery-grid img { height: 320px; }
+}
+
 .examcamp-final-cta {
   text-align: center;
   margin-top: 28px;
