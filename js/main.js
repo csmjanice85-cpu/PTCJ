@@ -64,8 +64,36 @@ document.addEventListener("DOMContentLoaded", function () {
     modal.addEventListener("click", function (e) {
       if (e.target === modal) closeTimetable();
     });
-    document.addEventListener("keydown", function (e) {
-      if (e.key === "Escape") closeTimetable();
+  }
+
+  // Exam camp detail modal (Bandar Seri Botani 60-day exam intensive)
+  var campModal = document.getElementById("examcamp-modal");
+  var campOpenBtn = document.getElementById("examcamp-open");
+  var campCloseBtn = document.getElementById("examcamp-close");
+
+  function openCamp() {
+    campModal.classList.add("open");
+    campModal.setAttribute("aria-hidden", "false");
+    document.body.style.overflow = "hidden";
+    campModal.querySelector(".examcamp-modal-box").scrollTop = 0;
+  }
+  function closeCamp() {
+    campModal.classList.remove("open");
+    campModal.setAttribute("aria-hidden", "true");
+    document.body.style.overflow = "";
+  }
+  if (campModal && campOpenBtn) {
+    campOpenBtn.addEventListener("click", openCamp);
+    campCloseBtn.addEventListener("click", closeCamp);
+    campModal.addEventListener("click", function (e) {
+      if (e.target === campModal) closeCamp();
     });
   }
+
+  // Shared Escape handler: closes whichever lightbox/modal is currently open
+  document.addEventListener("keydown", function (e) {
+    if (e.key !== "Escape") return;
+    if (modal && modal.classList.contains("open")) closeTimetable();
+    if (campModal && campModal.classList.contains("open")) closeCamp();
+  });
 });
