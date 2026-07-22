@@ -22,6 +22,17 @@
     nav_schedule: { zh: "时间表", bm: "Jadual Waktu", en: "Schedule" },
     nav_contact: { zh: "联系我们", bm: "Hubungi Kami", en: "Contact Us" },
     header_wa: { zh: "WhatsApp 咨询", bm: "WhatsApp Kami", en: "WhatsApp Us" },
+    back_home: { zh: "← 返回首页", bm: "← Kembali ke Laman Utama", en: "← Back to Homepage" },
+    intensive_title: {
+      zh: "60天小学考试特训班｜智励专业补习中心",
+      bm: "Kem Intensif Peperiksaan 60 Hari｜Pusat Tuisyen Celik Jaya",
+      en: "60-Day Exam Intensive Camp｜Pusat Tuisyen Celik Jaya"
+    },
+    intensive_desc: {
+      zh: "智励专业补习中心 Bandar Seri Botani 分校，60天小学考试特训班，一年级至六年级，小班 10–12 人，即刻 WhatsApp 预留名额。",
+      bm: "Kem Intensif Peperiksaan 60 Hari di Cawangan Bandar Seri Botani, Pusat Tuisyen Celik Jaya. Tahun 1 hingga 6, kelas kecil 10–12 pelajar. WhatsApp sekarang untuk tempah tempat.",
+      en: "60-Day Exam Intensive Camp at our Bandar Seri Botani branch. Year 1 to 6, small class of 10–12. WhatsApp us now to reserve your spot."
+    },
 
     hero_eyebrow: { zh: "一站式安亲 · 全科补习 · 幼儿园", bm: "Jagaan Sehenti · Tuisyen Semua Subjek · Tadika", en: "All-in-One Childcare · Full Tuition · Preschool" },
     hero_title: { zh: "忙碌上班，也能安心陪孩子长大", bm: "Sibuk bekerja, tetap tenang membesarkan anak", en: "Busy at work, still raise your child with peace of mind" },
@@ -311,9 +322,9 @@
     ec_grade5: { zh: "五年级 时间表", bm: "Jadual Tahun 5", en: "Year 5 Schedule" },
     ec_grade6: { zh: "六年级 时间表", bm: "Jadual Tahun 6", en: "Year 6 Schedule" },
     ec_deadline_note: {
-      zh: "报名截止日期：30 July 2026　|　请自备交通和午餐（详情以老师确认为准）",
-      bm: "Tarikh tutup pendaftaran: 30 Julai 2026　|　Sila bawa pengangkutan dan makanan sendiri (butiran tertakluk pengesahan guru)",
-      en: "Registration deadline: 30 July 2026　|　Please arrange your own transport and lunch (details subject to teacher confirmation)"
+      zh: "请自备交通和午餐（详情以老师确认为准）",
+      bm: "Sila bawa pengangkutan dan makanan sendiri (butiran tertakluk pengesahan guru)",
+      en: "Please arrange your own transport and lunch (details subject to teacher confirmation)"
     },
     ec_final_quote: {
       zh: "60天后，孩子的成绩会不会改变，取决于今天是否愿意开始。",

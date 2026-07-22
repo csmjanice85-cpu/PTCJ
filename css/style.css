@@ -685,6 +685,48 @@ section[id], #schedule-terengganu, #schedule-perak { scroll-margin-top: 96px; }
 .examcamp-final-cta p { font-size: 15px; opacity: 0.8; margin-bottom: 16px; }
 .examcamp-final-cta .btn { font-size: 17px; padding: 18px 34px; }
 
+/* ===== Standalone exam-camp landing page (/intensive) ===== */
+.intensive-hero-wrap {
+  background: linear-gradient(135deg, var(--primary), #241B33);
+}
+.intensive-hero-wrap .examcamp-hero {
+  max-width: 680px;
+  margin: 0 auto;
+  border-radius: 0;
+  background: transparent;
+  padding: 48px 24px 40px;
+}
+.intensive-body {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 8px 24px 70px;
+}
+.intensive-header {
+  padding: 18px 0;
+}
+.intensive-header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.intensive-back {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--primary);
+  opacity: 0.75;
+}
+.intensive-back:hover { opacity: 1; }
+.intensive-header-actions { display: flex; align-items: center; gap: 14px; }
+@media (max-width: 560px) {
+  .intensive-header .container { gap: 10px; }
+  .intensive-header-actions { gap: 8px; }
+  .intensive-header-actions .btn-primary { padding: 9px 14px; font-size: 12px; white-space: nowrap; }
+  .intensive-header .logo .logo-sub { display: none; }
+}
+
 /* ===== Timetable lightbox ===== */
 .timetable-modal {
   display: none;
