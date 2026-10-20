@@ -1,2 +1,4 @@
 /management     https://celik-jaya-management.netlify.app/management        200
 /management/*  https://celik-jaya-management.netlify.app/management/:splat  200
+/spin/daycare  https://deploy-preview-56--celik-jaya-management.netlify.app/management/spin-and-win/daycare  200
+/spin/tuition  https://deploy-preview-56--celik-jaya-management.netlify.app/management/spin-and-win/tuition  200
