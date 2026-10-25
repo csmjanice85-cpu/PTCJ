@@ -1,5 +1,6 @@
 /management     https://celik-jaya-management.netlify.app/management        200
+/enquiry        https://deploy-preview-61--celik-jaya-management.netlify.app/management/enquiry  200
+/management/_next/*  https://deploy-preview-61--celik-jaya-management.netlify.app/management/_next/:splat  200
 /management/*  https://celik-jaya-management.netlify.app/management/:splat  200
 /spin/daycare  https://celik-jaya-management.netlify.app/management/spin-and-win/daycare  200
 /spin/tuition  https://celik-jaya-management.netlify.app/management/spin-and-win/tuition  200
-/enquiry       https://deploy-preview-61--celik-jaya-management.netlify.app/management/enquiry  200
